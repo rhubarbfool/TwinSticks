@@ -7,15 +7,16 @@ public class Player : MonoBehaviour {
 	public bool tryingToGrab = false;
 	public bool isGrabbing = false;
 
+	private CrossPlatformInputManager.VirtualButton vb;
+
 	// Use this for initialization
 	void Start () {
-		print ("testing Git");
-		print ("testing SrcTree");
-		print ("testing SrcTree2");
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		print ("===> " + CrossPlatformInputManager.GetAxis ("Horizontal"));	
+
 		if (CrossPlatformInputManager.GetButton ("Fire3")) {
 			tryingToGrab = true;
 		} else {
