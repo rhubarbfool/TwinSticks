@@ -7,8 +7,6 @@ public class Player : MonoBehaviour {
 	public bool tryingToGrab = false;
 	public bool isGrabbing = false;
 
-	private CrossPlatformInputManager.VirtualButton vb;
-
 	// Use this for initialization
 	void Start () {
 	}
