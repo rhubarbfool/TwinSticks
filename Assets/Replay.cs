@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Replay : MonoBehaviour {
 
-	private const int bufferSize = 100;
+	private const int bufferSize = 1000;
 	private MyKeyFrame[] keyFrames = new MyKeyFrame[bufferSize];
 
 	private Rigidbody rigidBody;
